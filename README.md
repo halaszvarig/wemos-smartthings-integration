@@ -94,3 +94,10 @@ After adding the smartapp to the Hub, it will allow the user to select a device 
 
 The found and saved devices will use the previously installed and published device handlers. These device handlers rely on the HTTP based APIs provided by the code running on the devices, so the state is polled and changed using HTTP calls executed by the SmartThings Hub.
 
+## Thanks
+* @SmartThingsCommunity for the Generic UPnP Service Manager example
+* @wemos for the D1 mini nad SHT3x libs
+* @stblassitude for the OLED lib
+* @tzapu for WifiManager lib
+* @bblanchon for ArduinoJson lib
+* @jimvb for the inspiration, my Relay Switch code is based on his HTTP Button implementation
