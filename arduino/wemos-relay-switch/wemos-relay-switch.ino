@@ -1,5 +1,21 @@
-
-#include <ESP8266WiFi.h>
+/**
+ *  Wemos Relay Switch
+ *
+ *  Wemos D1 mini based relay switch using the Relay Shield with SSDP and HTTP API support
+ *
+ *  2019 Gabor Halaszvari <halaszvari@gmail.com>
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+ *  in compliance with the License. You may obtain a copy of the License at:
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed
+ *  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License
+ *  for the specific language governing permissions and limitations under the License.
+ *
+ */
+#include <ESP8266WiFi.h>      //https://github.com/esp8266/Arduino
 #include <ESP8266WebServer.h>
 #include <ESP8266SSDP.h>
 #include <DNSServer.h>
@@ -29,7 +45,7 @@ void setup() {
   // Setting up the pins
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(relayPin, OUTPUT);
-  
+
   // Setting up the initial state: led off, relay off
   digitalWrite(LED_BUILTIN, HIGH);
   digitalWrite(relayPin, LOW);
