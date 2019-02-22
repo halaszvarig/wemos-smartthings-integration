@@ -30,7 +30,6 @@ definition(
 preferences {
 	page(name: "searchTargetSelection", title: "Wemos Device Type Selection", nextPage: "deviceDiscovery") {
 	section("Device Type") {
-		input "searchTarget", "string", title: "Search Target", defaultValue: "urn:schemas-upnp-org:device:ZonePlayer:1", required: true
 		input "deviceType", "enum", title: "Which type of device do you want to search for?", multiple: false, required: true, options: ["Wemos Temperature Humidity Sensor", "Wemos Relay Switch"]
 	}
 }
