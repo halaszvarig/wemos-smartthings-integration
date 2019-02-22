@@ -50,14 +50,16 @@ Example response of the Temperature Humidity Sensor:
   timestamp: "2019-02-22T20:03:39Z",
   temperature: "22.4"
   humidity: "50"
-}```
+}
+```
 
 Example response of the Relay Switch:
 ```
 {
   timestamp: "2019-02-22T20:03:39Z",
   state: "off"
-}```
+}
+```
 
 Additionally, the state of the Wemos Relay Switch can be changed using the `relay` parameter.
 
