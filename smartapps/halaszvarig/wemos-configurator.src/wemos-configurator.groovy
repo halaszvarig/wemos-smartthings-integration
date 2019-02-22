@@ -38,9 +38,9 @@ preferences {
 
 def getSearchTarget() {
 	switch (deviceType) {
-		case "Temperature/Humidity Sensor":
+		case "Wemos Temperature/Humidity Sensor":
 			return "urn:schemas-upnp-org:device:WirelessTemperatureHumiditySensor:1"
-		case "Relay Switch":
+		case "Wemos Relay Switch":
 			return "urn:schemas-upnp-org:device:WirelessRelaySwitch:1"
 		default:
 			log.error "Type '$deviceType' is not defined"
