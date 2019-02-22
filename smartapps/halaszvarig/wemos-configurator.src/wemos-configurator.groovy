@@ -1,5 +1,5 @@
 /**
- * Wemos Wireless Device Configurator
+ * Wemos Configurator
  *  (based on Generic UPnP Service Manager from SmartThings)
  *
  *  Copyright 2016 SmartThings
@@ -39,12 +39,12 @@ preferences {
 def getSearchTarget() {
 	switch (deviceType) {
 		case "Wemos Temperature/Humidity Sensor":
-			return "urn:schemas-upnp-org:device:WirelessTemperatureHumiditySensor:1"
+			return "urn:schemas-upnp-org:device:WemosTemperatureHumiditySensor:1"
 		case "Wemos Relay Switch":
-			return "urn:schemas-upnp-org:device:WirelessRelaySwitch:1"
+			return "urn:schemas-upnp-org:device:WemosRelaySwitch:1"
 		default:
 			log.error "Type '$deviceType' is not defined"
-			return "urn:schemas-upnp-org:device:WirelessTemperatureHumiditySensor:1"
+			return "urn:schemas-upnp-org:device:WemosTemperatureHumiditySensor:1"
 	}
 }
 
