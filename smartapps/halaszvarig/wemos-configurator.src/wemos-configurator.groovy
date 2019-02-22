@@ -21,9 +21,9 @@ definition(
 	author: "Gabor Halaszvari",
 	description: "This SmartApp uses UPnP discovery to find and configure the ESP8266 based Wemos wireless devices",
 	category: "SmartThings Labs",
-	iconUrl: "https://s3.amazonaws.com/smartapp-icons/Internal/Cat-ST-Internal.png",
-	iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Internal/Cat-ST-Internal@2x.png",
-	iconX3Url: "https://s3.amazonaws.com/smartapp-icons/Internal/Cat-ST-Internal@3x.png"
+	iconUrl: "https://avatars2.githubusercontent.com/u/10327656",
+	iconX2Url: "https://avatars2.githubusercontent.com/u/10327656",
+	iconX3Url: "https://avatars2.githubusercontent.com/u/10327656"
 )
 
 
