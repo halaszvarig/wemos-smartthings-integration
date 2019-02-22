@@ -1,12 +1,21 @@
 # Wemos SmartThings Integration
 This repository contains SmartThings device handlers, a configurator smartapp and Arduino code for several custom Wemos D1 mini based devices.
 
+## Actual list of the supported devices
+Currently there are 2 device types supported, a temperature/humidity sensor and a relay switch, but based on these it's quite easy to create additional device types.
+#### Wemos Temperature Humidity Sensor
+* Provides a HTTP API where the actual temperature and humidity values can be queried.
+* Shows up as a sensor in the SmartThings classic mobile app.
+#### Wemos Relay Switch
+* Provides an HTTP API that can be used to toggle and retrieve the state of a relay.
+* Shows up as a switch in the SmartThings classic mobile app.
+
+
 ## Setting app the Wemos part
 _More info about Wemos: https://www.wemos.cc/_
 
-Currently there are 2 device types supported, a temperature/humidity sensor and a relay switch, but based on these it's quite easy to create additional device types.
-
 The hardware parts can be purchased online from the official store: https://lolin.aliexpress.com/store/1331105
+
 Arduino IDE and a few external libraries are required for programming the devices.
 
 ### Hardware components
@@ -64,6 +73,7 @@ Example response of the Wemos Relay Switch:
 Additionally, the state of the Wemos Relay Switch can be changed using the `relay` parameter.
 
 To turn on the switch, call: `http://DEVICE_IP:80/?relay=on`
+
 To turn off the switch, call: `http://DEVICE_IP:80/?relay=off`
 
 
@@ -83,3 +93,4 @@ The published smartapp can be added to the SmartThings Hub using the SmartThings
 After adding the smartapp to the Hub, it will allow the user to select a device type (Wemos Temperature Humidity Sensor or Wemos Relay Switch) then it will start listening to SSDP broadcasts and will discover all available devices of the give type connected to the same network as the Hub, and the user will be able to save the found devices. This process can be repeated whenever needed.
 
 The found and saved devices will use the previously installed and published device handlers. These device handlers rely on the HTTP based APIs provided by the code running on the devices, so the state is polled and changed using HTTP calls executed by the SmartThings Hub.
+
