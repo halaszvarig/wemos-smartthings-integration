@@ -3,9 +3,11 @@ This repository contains SmartThings device handlers, a configurator smartapp an
 
 ## Actual list of the supported devices
 Currently there are 2 device types supported, a temperature/humidity sensor and a relay switch, but based on these it's quite easy to create additional device types.
+
 #### Wemos Temperature Humidity Sensor
 * Provides a HTTP API where the actual temperature and humidity values can be queried.
 * Shows up as a sensor in the SmartThings classic mobile app.
+
 #### Wemos Relay Switch
 * Provides an HTTP API that can be used to toggle and retrieve the state of a relay.
 * Shows up as a switch in the SmartThings classic mobile app.
