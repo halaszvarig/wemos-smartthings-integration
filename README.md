@@ -1,6 +1,20 @@
 # Wemos SmartThings Integration
 This repository contains device handlers for custom wifi connected Wemos based devices and a configurator smartapp that can discover and register the devices using SSDP.
 
+## Supported devices
+
+### Wemos Temperature Humidity Sensor
+Components:
+* Tripler base
+* Wemos D1 Mini
+* SHT30 Shield
+* Oled Shield
+
+### Wemos Relay Switch
+Components:
+* Dual base
+* Wemos D1 Mini
+* Relay Shield
 
 ## Arduino Dependencies
 * Install the hardware package, and setup the board https://wiki.wemos.cc/tutorials:get_started:get_started_in_arduino
