@@ -16,7 +16,7 @@ Wemos Temperature Humidity Sensor
 * SHT30 Shield https://wiki.wemos.cc/products:d1_mini_shields:sht30_shield
 * OLED Shield https://wiki.wemos.cc/products:d1_mini_shields:oled_shield
 
-Wemos Temperature Humidity Sensor
+Wemos Relay Switch
 * Wemos D1 Mini https://wiki.wemos.cc/products:d1:d1_mini
 * Dual base https://wiki.wemos.cc/products:d1_mini_shields:dual_base
 * Relay Shield https://wiki.wemos.cc/products:d1_mini_shields:relay_shield
@@ -44,20 +44,22 @@ After successful connection, the device starts a web server and starts broadcast
 
 The devices also provide a very basic unauthenticated API. Calling the `http://DEVICE_IP:80/` endpoint will return the current state of the device:
 
-Example response of the Temperature Humidity Sensor:
+Example response of the Wemos Temperature Humidity Sensor:
 ```
 {
   timestamp: "2019-02-22T20:03:39Z",
   temperature: "22.4"
   humidity: "50"
-}```
+}
+```
 
-Example response of the Relay Switch:
+Example response of the Wemos Relay Switch:
 ```
 {
   timestamp: "2019-02-22T20:03:39Z",
   state: "off"
-}```
+}
+```
 
 Additionally, the state of the Wemos Relay Switch can be changed using the `relay` parameter.
 
