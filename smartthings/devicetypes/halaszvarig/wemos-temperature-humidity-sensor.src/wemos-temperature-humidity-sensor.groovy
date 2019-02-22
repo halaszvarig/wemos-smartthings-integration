@@ -22,6 +22,7 @@ metadata {
 		capability "Temperature Measurement"
 		capability "Relative Humidity Measurement"
 		capability "Refresh"
+
 		command "DeviceTrigger"
 
 		attribute "lastCheckin", "String"

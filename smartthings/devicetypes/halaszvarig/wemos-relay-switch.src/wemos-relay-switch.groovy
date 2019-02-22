@@ -21,6 +21,7 @@ metadata {
 	definition (name: "Wemos Relay Switch", namespace: "halaszvarig", author: "Gabor Halaszvari") {
 		capability "Switch"
 		capability "Refresh"
+
 		command "DeviceTrigger"
 	}
 

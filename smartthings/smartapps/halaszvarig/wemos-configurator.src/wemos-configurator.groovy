@@ -29,10 +29,10 @@ definition(
 
 preferences {
 	page(name: "searchTargetSelection", title: "Wemos Device Type Selection", nextPage: "deviceDiscovery") {
-	section("Device Type") {
-		input "deviceType", "enum", title: "Which type of device do you want to search for?", multiple: false, required: true, options: ["Wemos Temperature Humidity Sensor", "Wemos Relay Switch"]
+		section("Device Type") {
+			input "deviceType", "enum", title: "Which type of device do you want to search for?", multiple: false, required: true, options: ["Wemos Temperature Humidity Sensor", "Wemos Relay Switch"]
+		}
 	}
-}
 	page(name: "deviceDiscovery", title: "Wemos Device Setup", content: "deviceDiscovery")
 }
 
