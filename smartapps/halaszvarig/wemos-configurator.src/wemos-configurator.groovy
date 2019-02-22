@@ -24,7 +24,6 @@ definition(
 	iconUrl: "https://raw.githubusercontent.com/halaszvarig/wemos-smartthings-integration/master/smartapps/halaszvarig/wemos-configurator.src/wemos-logo.png"
 )
 
-
 preferences {
 	page(name: "searchTargetSelection", title: "Wemos Device Type Selection", nextPage: "deviceDiscovery") {
 		section("Device Type") {
