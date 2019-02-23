@@ -1,8 +1,8 @@
 # Wemos SmartThings Integration
 This repository contains SmartThings device handlers, a configurator smartapp and Arduino code for several custom Wemos D1 mini based devices.
 
-## Actual list of the supported devices
-Currently there are 2 device types supported, a temperature/humidity sensor and a relay switch, but based on these it's quite easy to create additional device types.
+## Supported devices
+Currently there are 2 device types supported, a temperature/humidity sensor and a relay switch and based on these it's quite easy to create additional device types.
 
 #### Wemos Temperature Humidity Sensor
 * Provides a HTTP API where the actual temperature and humidity values can be queried.
@@ -44,7 +44,7 @@ https://github.com/arduino-libraries/NTPClient
 ### Installation
 Setup the Arduino IDE and install the dependencies.
 
-Connect the components using the bases or using the stacking method, then use the Arduino IDE to compile and upload the specific code into the boards.
+Connect the components using the bases or using the stacking method, then use the Arduino IDE to compile and upload the specific code from the `arduino` folder into the boards.
 
 ### Initial wifi setup and basic operation
 During this process the Arduino IDE's built-in serial monitor can be used to get more debug information regarding the Wifi connection.
